@@ -1,4 +1,3 @@
-import Image from "next/image";
 import StarLogo from "../public/assets/svg/star.svg";
 
 export default function Ratings({ rating }) {
@@ -10,15 +9,15 @@ export default function Ratings({ rating }) {
   const stars = [];
   for (let i = 0; i < fullStars; i++) {
     stars.push(
-      <Image key={i} src={StarLogo} width="20px" alt="star-rating-logo" />
+      <img key={i} src={StarLogo.src} width="20px" alt="star-rating-logo" />
     );
   }
   // Add a half star if necessary
   if (hasHalfStar) {
     stars.push(
-      <Image
+      <img
         key="half-star"
-        src={StarLogo}
+        src={StarLogo.src}
         width="20px"
         alt="star-rating-logo"
         style={{ clipPath: "polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)" }}

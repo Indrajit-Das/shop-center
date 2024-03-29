@@ -6,8 +6,8 @@ import ProductList from "@/components/ProductList";
 export default function Home() {
   return (
     <>
+      <HeroSection />
       <main>
-        <HeroSection />
         <ProductList />
         <EmailScoop />
       </main>
